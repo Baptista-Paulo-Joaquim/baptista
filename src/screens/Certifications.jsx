@@ -83,7 +83,7 @@ export default function Certifications() {
             className="w-full text-white rounded-full border-gray-600 bg-gray-900 p-4 pe-32 text-sm font-medium"
             id="email"
             type="email"
-            placeholder="john@doe.com"
+            placeholder="example@gmail.com"
           />
 
           <button
