@@ -5,7 +5,7 @@ import About from "./screens/About";
 import Skills from "./screens/Skills";
 import Contact from "./screens/Contact";
 import Blog from "./screens/Blog";
-import Certification from "./screens/Certification";
+import Certifications from "./screens/Certifications";
 import Services from "./screens/Services";
 import NotFound from "./screens/NotFound";
 
@@ -19,7 +19,7 @@ export default function App() {
         <Route element={<Skills />} path="/skills"/>
         <Route element={<Contact />} path="/contact"/>
         <Route element={<Blog />} path="/blog"/>
-        <Route element={<Certification />} path="/certification"/>
+        <Route element={<Certifications />} path="/certifications"/>
         <Route element={<Services />} path="/services"/>
         <Route element={<NotFound />} path="*"/>
       </Routes>

@@ -1,7 +1,9 @@
 import { useState } from "react";
-import { Menu, X } from "lucide-react";
+import { Binary, Menu, X } from "lucide-react";
 import { FaJs, FaReact, FaNode, FaDocker, FaDatabase, FaLock, FaLinux, FaHtml5, FaGit, FaGithub, FaCss3, FaPython } from "react-icons/fa";
-import { SiTypescript, SiPostgresql, SiMysql } from "react-icons/si";
+import { SiTypescript, SiPostgresql, SiMysql, SiMongodb, SiAdobeillustrator, SiAdobexd, SiJquery, SiTailwindcss } from "react-icons/si";
+import { FaDigitalOcean } from "react-icons/fa6";
+import { FcElectronics } from "react-icons/fc";
 
 export default function Skills() {
       const [isOpen, setIsOpen] = useState(false);
@@ -23,14 +25,14 @@ export default function Skills() {
           <ul className="flex flex-col md:flex-row md:space-x-8 font-medium p-4 md:p-0 mt-4 md:mt-0 border border-gray-100 rounded-lg bg-gray-800 md:border-0 text-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
             <li><a href="/" className="block py-2 px-3 text-cyan-300">Home</a></li>
             <li><a href="/about" className="block py-2 px-3 hover:text-cyan-300">About</a></li>
-            <li><a href="/portfolio" className="block py-2 px-3 hover:text-cyan-300">Skills</a></li>
+            <li><a href="/skills" className="block py-2 px-3 hover:text-cyan-300">Skills</a></li>
             <li><a href="/contact" className="block py-2 px-3 hover:text-cyan-300">Contact</a></li>
             
             <li className="relative group">
               <span className="block py-2 px-3 hover:text-cyan-300 cursor-pointer">More ▼</span>
               <ul className="absolute hidden group-hover:block bg-gray-700 text-white left-0 top-full rounded-lg shadow-lg w-37">
                 <li><a href="/blog" className="block px-4 py-2 hover:bg-cyan-500">Blog</a></li>
-                <li><a href="/certification" className="block px-4 py-2 hover:bg-cyan-500">Certification</a></li>
+                <li><a href="/certifications" className="block px-4 py-2 hover:bg-cyan-500">Certifications</a></li>
                 <li><a href="/services" className="block px-4 py-2 hover:bg-cyan-500">Services</a></li>
               </ul>
             </li>
@@ -89,12 +91,32 @@ export default function Skills() {
                         <span className="mt-2">Cybersecurity</span>
                     </div>
                     <div className="flex flex-col items-center p-4 border border-gray-700 rounded-lg transition-transform hover:scale-108">
+                        <SiTailwindcss className="text-blue-400 text-5xl" />
+                        <span className="mt-2">Tailwind CSS</span>
+                    </div>
+                    <div className="flex flex-col items-center p-4 border border-gray-700 rounded-lg transition-transform hover:scale-108">
                         <FaGit className="text-orange-500 text-5xl" />
                         <span className="mt-2">GIT</span>
                     </div>
                     <div className="flex flex-col items-center p-4 border border-gray-700 rounded-lg transition-transform hover:scale-108">
                         <FaGithub className="text-black-500 text-5xl" />
                         <span className="mt-2">Github</span>
+                    </div>
+                    <div className="flex flex-col items-center p-4 border border-gray-700 rounded-lg transition-transform hover:scale-108">
+                        <SiMongodb className="text-green-500 text-5xl" />
+                        <span className="mt-2">Mongo</span>
+                    </div>
+                    <div className="flex flex-col items-center p-4 border border-gray-700 rounded-lg transition-transform hover:scale-108">
+                        <SiAdobeillustrator className="text-orange-300 text-5xl" />
+                        <span className="mt-2">Adobe Illustrator</span>
+                    </div>
+                    <div className="flex flex-col items-center p-4 border border-gray-700 rounded-lg transition-transform hover:scale-108">
+                        <SiAdobexd className="text-fuchsia-400 text-5xl" />
+                        <span className="mt-2">Adobe XD</span>
+                    </div>
+                    <div className="flex flex-col items-center p-4 border border-gray-700 rounded-lg transition-transform hover:scale-108">
+                        <SiJquery className="text-blue-400 text-5xl" />
+                        <span className="mt-2">JQuery</span>
                     </div>
                 </div>
             </div>

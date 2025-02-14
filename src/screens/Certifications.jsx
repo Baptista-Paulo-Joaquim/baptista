@@ -1,12 +1,11 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 
+export default function Certifications() {
 
-export default function Home() {
-
-  const [isOpen, setIsOpen] = useState(false);
+    const [isOpen, setIsOpen] = useState(false);
     return (
-        <>
+    <>
 <nav className="bg-gray-800 border-gray-200 dark:bg-gray-900 dark:border-gray-700">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <a href="#" className="flex items-center space-x-3">
@@ -40,49 +39,36 @@ export default function Home() {
     </nav>
 
 
-    <section className="h-screen bg-gray-900 text-white flex items-center">
-            <div className="mx-auto max-w-screen-xl px-4 py-32 lg:flex lg:items-center">
-                        <div className="lg:w-1/2 text-center lg:text-left">
-                          <h1 className="bg-gradient-to-r from-green-300 to-purple-600 bg-clip-text text-3xl font-extrabold text-transparent sm:text-5xl">
-                            Baptista Joaquim
-                            <span className="sm:block sm:text-2xl">
-                              Software Engineer | Cybersecurity Enthusiast
-                            </span>
-                          </h1>
+        <section className="bg-gray-900 text-white py-20">
+            <div className="max-w-screen-xl mx-auto px-6">
+            <h2 className="text-cyan-500 text-4xl font-extrabold sm:text-4xl text-center mb-8">Certifications</h2>
 
-                          <p className="mt-4 max-w-xl sm:text-xl/relaxed">
-                            I am a software engineer passionate about technology, web development, and cybersecurity. I have experience in JavaScript, TypeScript, React.js, Node.js, Docker, PostgreSQL, and digital security, creating efficient and scalable solutions.
-                            <br /><br />
-                            Currently, I also work in the field of systems development, applying technology to optimize processes and improve operational efficiency.
-                            <br /><br />
-                            In my portfolio, I share projects, technical articles, and services I offer. I am always open to new opportunities and challenges!
-                            <br /><br />
-                            📩 Get in touch for collaborations or projects.
-                          </p>
-
-                          <div className="mt-8 flex flex-wrap gap-4">
-                            <a
-                              className="block rounded-sm border border-cyan-300 px-12 py-3 text-sm font-medium text-white hover:bg-cyan-700 focus:ring-3 sm:w-auto"
-                              href="#"
-                            >
-                              Read more
-                            </a>
-                          </div>
-                        </div>
-
-                        {/* Right Column (Image) */}
-                <div className="lg:w-1/2 flex justify-center mt-10 lg:mt-0">
-                    <img 
-                        src="../img/baptista.png" 
-                        alt="Baptista Joaquim" 
-                        className="w-160 h-150 object-cover shadow-lg"
-                    />
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 text-center">
+                    <div className="p-4 border border-gray-700 rounded-lg hover:cursor-pointer hover:bg-cyan-900">
+                        <h3 className="text-xl font-semibold">Certified Software Engineer</h3>
+                        <p className="text-gray-400 text-sm">By UNIPIAGET | 2024</p>
+                    </div>
+                    <div className="p-4 border border-gray-700 rounded-lg hover:cursor-pointer hover:bg-cyan-900">
+                        <h3 className="text-xl font-semibold">Inglish 1 Course</h3>
+                        <p className="text-gray-400 text-sm">Issued by Instituto Federal de Educação, Ciência e Tecnologia do Rio Grande do Sul | 2023</p>
+                    </div>
+                    <div className="p-4 border border-gray-700 rounded-lg hover:cursor-pointer hover:bg-cyan-900">
+                        <h3 className="text-xl font-semibold">HTML Course</h3>
+                        <p className="text-gray-400 text-sm">Issued by Sololearn | 2020</p>
+                    </div>
+                    <div className="p-4 border border-gray-700 rounded-lg hover:cursor-pointer hover:bg-cyan-900">
+                        <h3 className="text-xl font-semibold">Javascript Course</h3>
+                        <p className="text-gray-400 text-sm">Issued by Sololearn | 2023</p>
+                    </div>
+                    <div className="p-4 border border-gray-700 rounded-lg hover:cursor-pointer hover:bg-cyan-900">
+                        <h3 className="text-xl font-semibold">Python Course</h3>
+                        <p className="text-gray-400 text-sm">Issued by Sololearn | 2023</p>
+                    </div>
                 </div>
-
             </div>
         </section>
 
-<footer className="bg-gray-800">
+        <footer className="bg-gray-800">
   <div className="mx-auto max-w-screen-xl px-4 pb-8 pt-16 sm:px-6 lg:px-8">
     <div className="mx-auto max-w-md">
       <strong className="block text-center text-xl font-bold text-white sm:text-3xl">
@@ -235,4 +221,4 @@ export default function Home() {
 </footer>
         </>
     );
-  }
+}
