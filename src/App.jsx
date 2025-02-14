@@ -2,7 +2,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import Home from "./screens/Home";
 import About from "./screens/About";
-import Portfolio from "./screens/Portfolio";
+import Skills from "./screens/Skills";
 import Contact from "./screens/Contact";
 import Blog from "./screens/Blog";
 import Certification from "./screens/Certification";
@@ -16,7 +16,7 @@ export default function App() {
       <Routes>
         <Route element={<Home />} path="/"/>
         <Route element={<About />} path="/about"/>
-        <Route element={<Portfolio />} path="/portfolio"/>
+        <Route element={<Skills />} path="/skills"/>
         <Route element={<Contact />} path="/contact"/>
         <Route element={<Blog />} path="/blog"/>
         <Route element={<Certification />} path="/certification"/>

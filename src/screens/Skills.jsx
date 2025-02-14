@@ -1,13 +1,13 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
+import { FaJs, FaReact, FaNode, FaDocker, FaDatabase, FaLock, FaLinux, FaHtml5, FaGit, FaGithub, FaCss3, FaPython } from "react-icons/fa";
+import { SiTypescript, SiPostgresql, SiMysql } from "react-icons/si";
 
-
-export default function Home() {
-
-  const [isOpen, setIsOpen] = useState(false);
+export default function Skills() {
+      const [isOpen, setIsOpen] = useState(false);
     return (
         <>
-<nav className="bg-gray-800 border-gray-200 dark:bg-gray-900 dark:border-gray-700">
+        <nav className="bg-gray-800 border-gray-200 dark:bg-gray-900 dark:border-gray-700">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <a href="#" className="flex items-center space-x-3">
           <h1 className="text-cyan-300 font-extrabold sm:text-4xl">
@@ -38,51 +38,70 @@ export default function Home() {
         </div>
       </div>
     </nav>
+        
+        <section className="h-screen bg-gray-900 text-white py-20">
+            <div className="max-w-screen-xl mx-auto px-6">
+                <h2 className="text-cyan-500 text-4xl font-extrabold sm:text-4xl text-center mb-8">Skills</h2>
 
-
-    <section className="h-screen bg-gray-900 text-white flex items-center">
-            <div className="mx-auto max-w-screen-xl px-4 py-32 lg:flex lg:items-center">
-                        <div className="lg:w-1/2 text-center lg:text-left">
-                          <h1 className="bg-gradient-to-r from-green-300 to-purple-600 bg-clip-text text-3xl font-extrabold text-transparent sm:text-5xl">
-                            Baptista Joaquim
-                            <span className="sm:block sm:text-2xl">
-                              Software Engineer | Cybersecurity Enthusiast
-                            </span>
-                          </h1>
-
-                          <p className="mt-4 max-w-xl sm:text-xl/relaxed">
-                            I am a software engineer passionate about technology, web development, and cybersecurity. I have experience in JavaScript, TypeScript, React.js, Node.js, Docker, PostgreSQL, and digital security, creating efficient and scalable solutions.
-                            <br /><br />
-                            Currently, I also work in the field of systems development, applying technology to optimize processes and improve operational efficiency.
-                            <br /><br />
-                            In my portfolio, I share projects, technical articles, and services I offer. I am always open to new opportunities and challenges!
-                            <br /><br />
-                            📩 Get in touch for collaborations or projects.
-                          </p>
-
-                          <div className="mt-8 flex flex-wrap gap-4">
-                            <a
-                              className="block rounded-sm border border-cyan-300 px-12 py-3 text-sm font-medium text-white hover:bg-cyan-700 focus:ring-3 sm:w-auto"
-                              href="#"
-                            >
-                              Read more
-                            </a>
-                          </div>
-                        </div>
-
-                        {/* Right Column (Image) */}
-                <div className="lg:w-1/2 flex justify-center mt-10 lg:mt-0">
-                    <img 
-                        src="../../p../../public/img/baptista.png" 
-                        alt="Baptista Joaquim" 
-                        className="w-160 h-150 object-cover shadow-lg"
-                    />
+                <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 text-center">
+                <div className="flex flex-col items-center p-4 border border-gray-700 rounded-lg transition-transform hover:scale-108">
+                        <FaHtml5 className="text-orange-500 text-5xl" />
+                        <span className="mt-2">HTML5</span>
+                    </div>
+                    <div className="flex flex-col items-center p-4 border border-gray-700 rounded-lg transition-transform hover:scale-108">
+                        <FaCss3 className="text-blue-500 text-5xl" />
+                        <span className="mt-2">CSS3</span>
+                    </div>
+                    <div className="flex flex-col items-center p-4 border border-gray-700 rounded-lg transition-transform hover:scale-108">
+                        <FaJs className="text-yellow-500 text-5xl" />
+                        <span className="mt-2">JavaScript</span>
+                    </div>
+                    <div className="flex flex-col items-center p-4 border border-gray-700 rounded-lg transition-transform hover:scale-108">
+                        <FaPython className="text-blue-500  text-5xl" />
+                        <span className="mt-2">Python</span>
+                    </div>
+                    <div className="flex flex-col items-center p-4 border border-gray-700 rounded-lg transition-transform hover:scale-108">
+                        <SiTypescript className="text-blue-500 text-5xl" />
+                        <span className="mt-2">TypeScript</span>
+                    </div>
+                    <div className="flex flex-col items-center p-4 border border-gray-700 rounded-lg transition-transform hover:scale-108">
+                        <FaReact className="text-blue-400 text-5xl" />
+                        <span className="mt-2">React.js</span>
+                    </div>
+                    <div className="flex flex-col items-center p-4 border border-gray-700 rounded-lg transition-transform hover:scale-108">
+                        <FaNode className="text-green-500 text-5xl" />
+                        <span className="mt-2">Node.js</span>
+                    </div>
+                    <div className="flex flex-col items-center p-4 border border-gray-700 rounded-lg transition-transform hover:scale-108">
+                        <FaDocker className="text-blue-400 text-5xl" />
+                        <span className="mt-2">Docker</span>
+                    </div>
+                    <div className="flex flex-col items-center p-4 border border-gray-700 rounded-lg transition-transform hover:scale-108">
+                        <SiPostgresql className="text-blue-300 text-5xl" />
+                        <span className="mt-2">PostgreSQL</span>
+                    </div>
+                    <div className="flex flex-col items-center p-4 border border-gray-700 rounded-lg transition-transform hover:scale-108">
+                        <SiMysql className="text-yellow-400 text-5xl" />
+                        <span className="mt-2">MySQL</span>
+                    </div>
+                    <div className="flex flex-col items-center p-4 border border-gray-700 rounded-lg transition-transform hover:scale-108">
+                        <FaLock className="text-red-500 text-5xl" />
+                        <span className="mt-2">Cybersecurity</span>
+                    </div>
+                    <div className="flex flex-col items-center p-4 border border-gray-700 rounded-lg transition-transform hover:scale-108">
+                        <FaGit className="text-orange-500 text-5xl" />
+                        <span className="mt-2">GIT</span>
+                    </div>
+                    <div className="flex flex-col items-center p-4 border border-gray-700 rounded-lg transition-transform hover:scale-108">
+                        <FaGithub className="text-black-500 text-5xl" />
+                        <span className="mt-2">Github</span>
+                    </div>
                 </div>
-
             </div>
         </section>
 
-<footer className="bg-gray-800">
+
+        <footer className="bg-gray-800">
   <div className="mx-auto max-w-screen-xl px-4 pb-8 pt-16 sm:px-6 lg:px-8">
     <div className="mx-auto max-w-md">
       <strong className="block text-center text-xl font-bold text-white sm:text-3xl">
@@ -235,4 +254,4 @@ export default function Home() {
 </footer>
         </>
     );
-  }
+}
