@@ -73,7 +73,7 @@ export default function Home() {
                         {/* Right Column (Image) */}
                 <div className="lg:w-1/2 flex justify-center mt-10 lg:mt-0">
                     <img 
-                        src="../../p../../public/img/baptista.png" 
+                        src="../img/baptista.png" 
                         alt="Baptista Joaquim" 
                         className="w-160 h-150 object-cover shadow-lg"
                     />
