@@ -23,7 +23,7 @@ export default function Home() {
           <ul className="flex flex-col md:flex-row md:space-x-8 font-medium p-4 md:p-0 mt-4 md:mt-0 border border-gray-100 rounded-lg bg-gray-800 md:border-0 text-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
             <li><a href="/" className="block py-2 px-3 text-cyan-300">Home</a></li>
             <li><a href="/about" className="block py-2 px-3 hover:text-cyan-300">About</a></li>
-            <li><a href="/portfolio" className="block py-2 px-3 hover:text-cyan-300">Skills</a></li>
+            <li><a href="/skills" className="block py-2 px-3 hover:text-cyan-300">Skills</a></li>
             <li><a href="/contact" className="block py-2 px-3 hover:text-cyan-300">Contact</a></li>
             
             <li className="relative group">
