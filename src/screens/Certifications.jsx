@@ -8,7 +8,7 @@ export default function Certifications() {
     <>
 <nav className="bg-gray-800 border-gray-200 dark:bg-gray-900 dark:border-gray-700">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-        <a href="#" className="flex items-center space-x-3">
+        <a href="/" className="flex items-center space-x-3">
           <h1 className="text-cyan-300 font-extrabold sm:text-4xl">
             Baptista
           </h1>

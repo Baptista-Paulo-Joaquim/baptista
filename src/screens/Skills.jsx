@@ -1,9 +1,8 @@
 import { useState } from "react";
-import { Binary, Menu, X } from "lucide-react";
-import { FaJs, FaReact, FaNode, FaDocker, FaDatabase, FaLock, FaLinux, FaHtml5, FaGit, FaGithub, FaCss3, FaPython } from "react-icons/fa";
+import { Menu, X } from "lucide-react";
+import { FaJs, FaReact, FaNode, FaDocker, FaLock, FaHtml5, FaGit, FaGithub, FaCss3, FaPython } from "react-icons/fa";
 import { SiTypescript, SiPostgresql, SiMysql, SiMongodb, SiAdobeillustrator, SiAdobexd, SiJquery, SiTailwindcss } from "react-icons/si";
-import { FaDigitalOcean } from "react-icons/fa6";
-import { FcElectronics } from "react-icons/fc";
+
 
 export default function Skills() {
       const [isOpen, setIsOpen] = useState(false);

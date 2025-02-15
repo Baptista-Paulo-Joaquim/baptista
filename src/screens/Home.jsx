@@ -25,7 +25,7 @@ export default function Home() {
             <li><a href="/about" className="block py-2 px-3 hover:text-cyan-300">About</a></li>
             <li><a href="/skills" className="block py-2 px-3 hover:text-cyan-300">Skills</a></li>
             <li><a href="/contact" className="block py-2 px-3 hover:text-cyan-300">Contact</a></li>
-            
+                   
             <li className="relative group">
               <span className="block py-2 px-3 hover:text-cyan-300 cursor-pointer">More ▼</span>
               <ul className="absolute hidden group-hover:block bg-gray-700 text-white left-0 top-full rounded-lg shadow-lg w-37">
@@ -41,46 +41,47 @@ export default function Home() {
 
 
     <section className="h-screen bg-gray-900 text-white flex items-center">
-            <div className="mx-auto max-w-screen-xl px-4 py-32 lg:flex lg:items-center">
-                        <div className="lg:w-1/2 text-center lg:text-left">
-                          <h1 className="bg-gradient-to-r from-green-300 to-purple-600 bg-clip-text text-3xl font-extrabold text-transparent sm:text-5xl">
-                            Baptista Joaquim
-                            <span className="sm:block sm:text-2xl">
-                              Software Engineer | Cybersecurity Enthusiast
-                            </span>
-                          </h1>
+  <div className="max-w-screen-xl mx-auto px-4 flex flex-col lg:flex-row items-center">
+    {/* Left Column */}
+    <div className="lg:w-1/2 text-center lg:text-left">
+      <h1 className="bg-gradient-to-r from-green-300 to-purple-600 bg-clip-text text-3xl font-extrabold text-transparent sm:text-5xl">
+        Baptista Joaquim
+        <span className="sm:block sm:text-2xl">
+          Software Engineer | Cybersecurity Enthusiast
+        </span>
+      </h1>
 
-                          <p className="mt-4 max-w-xl sm:text-xl/relaxed">
-                            I am a software engineer passionate about technology, web development, and cybersecurity. I have experience in JavaScript, TypeScript, React.js, Node.js, Docker, PostgreSQL, and digital security, creating efficient and scalable solutions.
-                            <br /><br />
-                            Currently, I also work in the field of systems development, applying technology to optimize processes and improve operational efficiency.
-                            <br /><br />
-                            In my portfolio, I share projects, technical articles, and services I offer. I am always open to new opportunities and challenges!
-                            <br /><br />
-                            📩 Get in touch for collaborations or projects.
-                          </p>
+      <p className="mt-4 max-w-xl sm:text-xl/relaxed">
+        I am a software engineer passionate about technology, web development, and cybersecurity. I have experience in JavaScript, TypeScript, React.js, Node.js, Docker, PostgreSQL, and digital security, creating efficient and scalable solutions.
+        <br /><br />
+        Currently, I also work in the field of systems development, applying technology to optimize processes and improve operational efficiency.
+        <br /><br />
+        In my portfolio, I share projects, technical articles, and services I offer. I am always open to new opportunities and challenges!
+        <br /><br />
+        📩 Get in touch for collaborations or projects.
+      </p>
 
-                          <div className="mt-8 flex flex-wrap gap-4">
-                            <a
-                              className="block rounded-sm border border-cyan-300 px-12 py-3 text-sm font-medium text-white hover:bg-cyan-700 focus:ring-3 sm:w-auto"
-                              href="#"
-                            >
-                              Read more
-                            </a>
-                          </div>
-                        </div>
+      <div className="mt-8 flex flex-wrap gap-4">
+        <a
+          className="block rounded-sm border border-cyan-300 px-12 py-3 text-sm font-medium text-white hover:bg-cyan-700 focus:ring-3 sm:w-auto"
+          href="#"
+        >
+          Read more
+        </a>
+      </div>
+    </div>
 
-                        {/* Right Column (Image) */}
-                <div className="lg:w-1/2 flex justify-center mt-10 lg:mt-0">
-                    <img 
-                        src="../img/baptista.png" 
-                        alt="Baptista Joaquim" 
-                        className="w-160 h-150 object-cover shadow-lg"
-                    />
-                </div>
+    {/* Right Column */}
+    <div className="lg:w-1/2 flex justify-center mt-10 lg:mt-0">
+      <img 
+        src="../img/baptista.png" 
+        alt="Baptista Joaquim" 
+        className="w-160 h-150 object-cover shadow-lg"
+      />
+    </div>
+  </div>
+</section>
 
-            </div>
-        </section>
 
 <footer className="bg-gray-800">
   <div className="mx-auto max-w-screen-xl px-4 pb-8 pt-16 sm:px-6 lg:px-8">
