@@ -39,8 +39,9 @@ export default function Skills() {
         </div>
       </div>
     </nav>
+    
         
-        <section className="h-screen bg-gray-900 text-white py-20">
+        <section className="min-h-screen bg-gray-900 text-white py-20">
             <div className="max-w-screen-xl mx-auto px-6">
                 <h2 className="text-cyan-500 text-4xl font-extrabold sm:text-4xl text-center mb-8">Skills</h2>
 
@@ -122,7 +123,7 @@ export default function Skills() {
         </section>
 
 
-        <footer className="bg-gray-800">
+  <footer className="bg-gray-800">
   <div className="mx-auto max-w-screen-xl px-4 pb-8 pt-16 sm:px-6 lg:px-8">
     <div className="mx-auto max-w-md">
       <strong className="block text-center text-xl font-bold text-white sm:text-3xl">
