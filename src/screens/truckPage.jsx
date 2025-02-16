@@ -1,14 +1,12 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
-import { FaCode, FaAngleDoubleRight, FaPencilRuler, FaTruck } from "react-icons/fa";
 
 
-export default function Services() {
-      const [isOpen, setIsOpen] = useState(false);
+export default function Truck() {
+
+  const [isOpen, setIsOpen] = useState(false);
     return (
-
         <>
-
 <nav className="bg-gray-800 border-gray-200 dark:bg-gray-900 dark:border-gray-700">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <a href="#" className="flex items-center space-x-3">
@@ -42,72 +40,50 @@ export default function Services() {
     </nav>
 
 
-        <section className="h-screen bg-gray-900 text-white">
-            <div className="mx-auto max-w-screen-xl px-4 py-30 flex h-full items-center">
-                <div className="mx-auto max-w-3xl text-center">
-                <section className="min-h-screen bg-gray-900 text-white py-20">
-      <div className="max-w-screen-xl mx-auto px-6">
-        <h2 className="text-cyan-500 text-4xl font-extrabold sm:text-4xl text-center mb-8">
-          Services
-        </h2>
+<section className="h-screen bg-gray-900 text-white flex items-center">
+  <div className="max-w-screen-xl mx-auto px-4 flex flex-col lg:flex-row items-center">
+     {/* Left Column */}
+     <div className="lg:w-1/2 text-center lg:text-left">
+      <h1 className="bg-gradient-to-r from-blue-800 to-purple-600 bg-clip-text text-3xl font-extrabold text-transparent sm:text-5xl">
+      Nsualulu Investimentos
+        <span className="sm:block sm:text-2xl">
+        Cargo transportation
+        </span>
+      </h1>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 text-center">
-          <div className="flex flex-col items-center p-6 border border-gray-700 rounded-lg transition-transform hover:scale-105">
-            <FaCode className="text-blue-400 text-6xl" />
-            <h3 className="mt-4 text-xl font-semibold">Web Development</h3>
-            <p className="mt-2 text-gray-400 text-sm">
-              Custom software solutions, web and mobile applications tailored to your business needs.
-            </p>
-            <div className="mt-8 flex flex-wrap gap-4">
-                <a
-                className="block rounded-sm border border-cyan-300 px-10 py-2 text-sm font-medium text-white hover:bg-cyan-700 focus:ring-3 sm:w-auto"
-                href="#"
-                >
-                Read More...
-                </a>
-            </div>
-          </div>
+      <p className="mt-4 max-w-xl sm:text-xl/relaxed">
+      About Nsualulu Investimentos
 
-          <div className="flex flex-col items-center p-6 border border-gray-700 rounded-lg transition-transform hover:scale-105">
-            <FaPencilRuler className="text-yellow-400 text-6xl" />
-            <h3 className="mt-4 text-xl font-semibold">Graphic Design</h3>
-            <p className="mt-2 text-gray-400 text-sm">
-              Creative and functional designs for branding, logos, promotional materials, and more.
-            </p>
-             <div className="mt-8 flex flex-wrap gap-4">
-                <a
-                className="block rounded-sm border border-cyan-300 px-10 py-2 text-sm font-medium text-white hover:bg-cyan-700 focus:ring-3 sm:w-auto"
-                href="#"
-                >
-                Read More...
-                </a>
-            </div>
-          </div>
+    Nsualulu Investimentos is a Mozambican company specializing in cargo transportation within the country. With a modern fleet and a highly qualified team, we ensure efficient, safe, and timely logistics solutions to meet our clients' needs.
 
-          <div className="flex flex-col items-center p-6 border border-gray-700 rounded-lg transition-transform hover:scale-105">
-            <FaTruck className="text-green-500 text-6xl" />
-            <h3 className="mt-4 text-xl font-semibold">Logistics (Cargo Transportation)</h3>
-            <p className="mt-2 text-gray-400 text-sm">
-              Reliable and efficient cargo transportation services with a focus on safety and punctuality.
-            </p>
-            <div className="mt-8 flex flex-wrap gap-4">
-                <a
-                className="block rounded-sm border border-cyan-300 px-10 py-2 text-sm font-medium text-white hover:bg-cyan-700 focus:ring-3 sm:w-auto"
-                href="/services/truck"
-                >
-                Read More...
-                </a>
-            </div>
-          </div>
-        </div>
+    We operate in the transportation of goods for various sectors, including trade, industry, and agriculture, providing a reliable service that drives business growth and productivity in Mozambique. Our commitment is to excellence, ensuring fast deliveries and high-quality customer service.
+
+    If you are looking for a trustworthy logistics partner for your operations, Nsualulu Investimentos is ready to serve you!
+      </p>
+
+      <div className="mt-8 flex flex-wrap gap-4">
+        <a
+          className="block rounded-sm border border-cyan-300 px-12 py-3 text-sm font-medium text-white hover:bg-cyan-700 focus:ring-3 sm:w-auto"
+          href="#"
+        >
+          Read more
+        </a>
       </div>
-    </section>
-                </div>
-            </div>
-        </section>
+    </div>
+
+    {/* Right Column */}
+    <div className="lg:w-1/2 flex justify-center mt-10 lg:mt-0">
+      <img 
+        src="../img/Nsualulu.png" 
+        alt="Truck Image" 
+        className="w-160 h-150 object-cover shadow-lg"
+      />
+    </div>
+  </div>
+</section>
 
 
-        <footer className="bg-gray-800">
+<footer className="bg-gray-800">
   <div className="mx-auto max-w-screen-xl px-4 pb-8 pt-16 sm:px-6 lg:px-8">
     <div className="mx-auto max-w-md">
       <strong className="block text-center text-xl font-bold text-white sm:text-3xl">
@@ -260,4 +236,4 @@ export default function Services() {
 </footer>
         </>
     );
-}
+  }
