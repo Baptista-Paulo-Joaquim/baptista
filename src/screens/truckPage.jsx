@@ -44,7 +44,7 @@ export default function Truck() {
   <div className="max-w-screen-xl mx-auto px-4 flex flex-col lg:flex-row items-center">
      {/* Left Column */}
      <div className="lg:w-1/2 text-center lg:text-left">
-      <h1 className="bg-gradient-to-r from-blue-800 to-purple-600 bg-clip-text text-3xl font-extrabold text-transparent sm:text-5xl">
+      <h1 className="bg-gradient-to-r from-cyan-400 to-purple-600 bg-clip-text text-3xl font-extrabold text-transparent sm:text-5xl">
       Nsualulu Investimentos
         <span className="sm:block sm:text-2xl">
         Cargo transportation
@@ -74,7 +74,7 @@ export default function Truck() {
     {/* Right Column */}
     <div className="lg:w-1/2 flex justify-center mt-10 lg:mt-0">
       <img 
-        src="../img/Nsualulu.png" 
+        src="../img/Nsualulu.webp" 
         alt="Truck Image" 
         className="w-160 h-150 object-cover shadow-lg"
       />

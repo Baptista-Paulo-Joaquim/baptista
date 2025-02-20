@@ -1,32 +1,39 @@
 import { useState } from "react";
-import { Menu, X } from "lucide-react";
+import { Menu, X , Globe } from "lucide-react";
 import { FaJs, FaReact, FaNode, FaDocker, FaLock, FaHtml5, FaGit, FaGithub, FaCss3, FaPython } from "react-icons/fa";
 import { SiTypescript, SiPostgresql, SiMysql, SiMongodb, SiAdobeillustrator, SiAdobexd, SiJquery, SiTailwindcss } from "react-icons/si";
 
 
 export default function Skills() {
       const [isOpen, setIsOpen] = useState(false);
+      const [language, setLanguage] = useState("EN"); // Default language
+
+      const toggleLanguage = () => {
+        setLanguage((prev) => (prev === "EN" ? "PT" : "EN"));
+      };
+
     return (
         <>
-        <nav className="bg-gray-800 border-gray-200 dark:bg-gray-900 dark:border-gray-700">
+         <nav className="bg-gray-800 border-gray-200 dark:bg-gray-900 dark:border-gray-700">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <a href="#" className="flex items-center space-x-3">
-          <h1 className="text-cyan-300 font-extrabold sm:text-4xl">
-            Baptista
-          </h1>
+          <h1 className="text-cyan-300 font-extrabold sm:text-4xl">Baptista</h1>
         </a>
-        
-        <button  onClick={() => setIsOpen(!isOpen)} className="md:hidden text-white focus:outline-none" >
+
+        <button
+          onClick={() => setIsOpen(!isOpen)}
+          className="md:hidden text-white focus:outline-none"
+        >
           {isOpen ? <X size={30} /> : <Menu size={30} />}
         </button>
-        
+
         <div className={`${isOpen ? "block" : "hidden"} w-full md:flex md:w-auto`}>
           <ul className="flex flex-col md:flex-row md:space-x-8 font-medium p-4 md:p-0 mt-4 md:mt-0 border border-gray-100 rounded-lg bg-gray-800 md:border-0 text-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
             <li><a href="/" className="block py-2 px-3 text-cyan-300">Home</a></li>
             <li><a href="/about" className="block py-2 px-3 hover:text-cyan-300">About</a></li>
             <li><a href="/skills" className="block py-2 px-3 hover:text-cyan-300">Skills</a></li>
             <li><a href="/contact" className="block py-2 px-3 hover:text-cyan-300">Contact</a></li>
-            
+
             <li className="relative group">
               <span className="block py-2 px-3 hover:text-cyan-300 cursor-pointer">More ▼</span>
               <ul className="absolute hidden group-hover:block bg-gray-700 text-white left-0 top-full rounded-lg shadow-lg w-37">
@@ -35,6 +42,33 @@ export default function Skills() {
                 <li><a href="/services" className="block px-4 py-2 hover:bg-cyan-500">Services</a></li>
               </ul>
             </li>
+
+            {/* Language Switcher */}
+            <li className="relative group">
+              <button className="flex items-center gap-2 px-3 py-2 hover:text-cyan-300 cursor-pointer">
+                <Globe size={20} />
+                {language}
+              </button>
+              <ul className="absolute hidden group-hover:block bg-gray-700 text-white left-0 top-full rounded-lg shadow-lg w-20">
+                <li>
+                  <button
+                    onClick={() => setLanguage("EN")}
+                    className="block px-4 py-2 hover:bg-cyan-500 w-full text-left"
+                  >
+                    EN
+                  </button>
+                </li>
+                <li>
+                  <button
+                    onClick={() => setLanguage("PT")}
+                    className="block px-4 py-2 hover:bg-cyan-500 w-full text-left"
+                  >
+                    PT
+                  </button>
+                </li>
+              </ul>
+            </li>
+
           </ul>
         </div>
       </div>
