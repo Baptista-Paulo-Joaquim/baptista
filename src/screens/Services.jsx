@@ -107,7 +107,7 @@ export default function Services() {
             </p>
             <div className="mt-8 flex flex-wrap gap-4">
                 <a
-                className="block rounded-sm border border-cyan-300 px-10 py-2 text-sm font-medium text-white hover:bg-cyan-700 focus:ring-3 sm:w-auto"
+                className="block rounded-sm border border-green-300 px-10 py-2 text-sm font-medium text-white hover:bg-green-500 focus:ring-3 sm:w-auto"
                 href="#"
                 >
                 Read More...
@@ -123,7 +123,7 @@ export default function Services() {
             </p>
              <div className="mt-8 flex flex-wrap gap-4">
                 <a
-                className="block rounded-sm border border-cyan-300 px-10 py-2 text-sm font-medium text-white hover:bg-cyan-700 focus:ring-3 sm:w-auto"
+                className="block rounded-sm border border-green-300 px-10 py-2 text-sm font-medium text-white hover:bg-green-500 focus:ring-3 sm:w-auto"
                 href="#"
                 >
                 Read More...
@@ -139,7 +139,7 @@ export default function Services() {
             </p>
             <div className="mt-8 flex flex-wrap gap-4">
                 <a
-                className="block rounded-sm border border-cyan-300 px-10 py-2 text-sm font-medium text-white hover:bg-cyan-700 focus:ring-3 sm:w-auto"
+                className="block rounded-sm border border-green-300 px-10 py-2 text-sm font-medium text-white hover:bg-green-500 focus:ring-3 sm:w-auto"
                 href="/services/truck"
                 >
                 Read More...

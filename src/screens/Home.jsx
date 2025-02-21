@@ -5,11 +5,17 @@ import { Menu, X, Globe, Sun, Moon,  } from "lucide-react";
 export default function Home() {
 
   const [isOpen, setIsOpen] = useState(false);
-  const [language, setLanguage] = useState("EN"); // Default language
+  const [language, setLanguage] = useState("EN"); // Default language is English
   const [darkMode, setDarkMode] = useState(() => {
-    return localStorage.getItem("theme") === "dark";
+    // Check localStorage first, then system preference
+    if (typeof window !== 'undefined') {
+      const savedTheme = localStorage.getItem("theme");
+      if (savedTheme) return savedTheme === "dark";
+      return window.matchMedia("(prefers-color-scheme: dark)").matches;
+    }
+    return false;
   });
-
+  
   useEffect(() => {
     if (darkMode) {
       document.documentElement.classList.add("dark");
@@ -26,7 +32,7 @@ export default function Home() {
 
     return (
     <>
-  <nav className="bg-gray-800 border-gray-200 dark:bg-gray-900 dark:border-gray-700">
+  <nav className="bg-gray-800 dark:bg-gray-900 dark:border-gray-700">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <a href="#" className="flex items-center space-x-3">
           <h1 className="text-green-300 font-extrabold sm:text-4xl">Baptista</h1>
@@ -89,7 +95,7 @@ export default function Home() {
   </nav>
 
 
-    <section className="h-screen bg-gray-900 text-white flex items-center">
+  <section className="h-screen bg-gray-900 text-white flex items-center">
   <div className="max-w-screen-xl mx-auto px-4 flex flex-col lg:flex-row items-center">
     {/* Left Column */}
     <div className="lg:w-1/2 text-center lg:text-left">

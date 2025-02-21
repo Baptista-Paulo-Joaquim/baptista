@@ -26,7 +26,7 @@ export default function Home() {
 
     return (
     <>
-    <nav className="bg-gray-800 border-gray-200 dark:bg-gray-900 dark:border-gray-700">
+ <nav className="bg-gray-800 border-gray-200 dark:bg-gray-900 dark:border-gray-700">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <a href="#" className="flex items-center space-x-3">
           <h1 className="text-green-300 font-extrabold sm:text-4xl">Baptista</h1>
@@ -75,10 +75,10 @@ export default function Home() {
               </button>
               <ul className="absolute hidden group-hover:block bg-gray-700 left-0 top-full shadow-lg w-15">
                 <li>
-                  <button className="block px-4 py-2 hover:bg-gray-600 w-full text-left"><US title="United States" className="w-7" /></button>
+                  <button className="block px-4 py-2 hover:bg-white w-full text-left"><US title="United States" className="w-7" /></button>
                 </li>
                 <li>
-                  <button className="block px-4 py-2 hover:bg-gray-600 w-full text-left"><MZ title="Mozambique" className="w-7" /></button>
+                  <button className="block px-4 py-2 hover:bg-white w-full text-left"><MZ title="Mozambique" className="w-7" /></button>
                 </li>
               </ul>
             </li>
@@ -92,7 +92,7 @@ export default function Home() {
     <section className="h-screen bg-gray-900 text-white">
             <div className="mx-auto max-w-screen-xl px-4 py-30 flex h-full items-center">
                 <div className="mx-auto max-w-3xl text-center">
-                    <h1 className="bg-gradient-to-r from-green-400 to-purple-200 bg-clip-text text-4xl font-bold text-transparent sm:text-4xl">
+                    <h1 className="bg-gradient-to-r from-green-400 to-purple-200 bg-clip-text text-4xl font-bold text-transparent sm:text-5xl">
                         About Me
                     </h1>
                     <p className="mt-6 text-lg">
@@ -122,7 +122,7 @@ export default function Home() {
         </section>
 
 
-        <footer className="bg-gray-800">
+<footer className="bg-gray-800">
   <div className="mx-auto max-w-screen-xl px-4 pb-8 pt-16 sm:px-6 lg:px-8">
     <div className="mx-auto max-w-md">
       <strong className="block text-center text-xl font-bold text-white sm:text-3xl">
