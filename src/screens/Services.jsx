@@ -1,24 +1,38 @@
-import { useState } from "react";
-import { Menu, X, Globe } from "lucide-react";
-import { FaCode, FaAngleDoubleRight, FaPencilRuler, FaTruck } from "react-icons/fa";
-
+import { useState, useEffect } from "react";
+import "react-world-flags"
+import { US, MZ } from 'country-flag-icons/react/3x2'
+import { Menu, X, Globe, Sun, Moon,  } from "lucide-react";
+import { FaCode, FaPencilRuler, FaTruck } from "react-icons/fa";
 
 export default function Services() {
   const [isOpen, setIsOpen] = useState(false);
   const [language, setLanguage] = useState("EN"); // Default language
+  const [darkMode, setDarkMode] = useState(() => {
+    return localStorage.getItem("theme") === "dark";
+  });
+
+  useEffect(() => {
+    if (darkMode) {
+      document.documentElement.classList.add("dark");
+      localStorage.setItem("theme", "dark");
+    } else {
+      document.documentElement.classList.remove("dark");
+      localStorage.setItem("theme", "light");
+    }
+  }, [darkMode]);
 
   const toggleLanguage = () => {
     setLanguage((prev) => (prev === "EN" ? "PT" : "EN"));
   };
     return (
         <>
-
-<nav className="bg-gray-800 border-gray-200 dark:bg-gray-900 dark:border-gray-700">
+  <nav className="bg-gray-800 border-gray-200 dark:bg-gray-900 dark:border-gray-700">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <a href="#" className="flex items-center space-x-3">
-          <h1 className="text-cyan-300 font-extrabold sm:text-4xl">Baptista</h1>
+          <h1 className="text-green-300 font-extrabold sm:text-4xl">Baptista</h1>
         </a>
 
+        {/* Botão de menu mobile */}
         <button
           onClick={() => setIsOpen(!isOpen)}
           className="md:hidden text-white focus:outline-none"
@@ -26,44 +40,45 @@ export default function Services() {
           {isOpen ? <X size={30} /> : <Menu size={30} />}
         </button>
 
+        {/* Menu de navegação */}
         <div className={`${isOpen ? "block" : "hidden"} w-full md:flex md:w-auto`}>
           <ul className="flex flex-col md:flex-row md:space-x-8 font-medium p-4 md:p-0 mt-4 md:mt-0 border border-gray-100 rounded-lg bg-gray-800 md:border-0 text-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
-            <li><a href="/" className="block py-2 px-3 text-cyan-300">Home</a></li>
-            <li><a href="/about" className="block py-2 px-3 hover:text-cyan-300">About</a></li>
-            <li><a href="/skills" className="block py-2 px-3 hover:text-cyan-300">Skills</a></li>
-            <li><a href="/contact" className="block py-2 px-3 hover:text-cyan-300">Contact</a></li>
+            <li><a href="/" className="block py-2 px-3 text-green-300">Home</a></li>
+            <li><a href="/about" className="block py-2 px-3 hover:text-green-300">About</a></li>
+            <li><a href="/skills" className="block py-2 px-3 hover:text-green-300">Skills</a></li>
+            <li><a href="/contact" className="block py-2 px-3 hover:text-green-300">Contact</a></li>
 
+            {/* Dropdown More */}
             <li className="relative group">
-              <span className="block py-2 px-3 hover:text-cyan-300 cursor-pointer">More ▼</span>
-              <ul className="absolute hidden group-hover:block bg-gray-700 text-white left-0 top-full rounded-lg shadow-lg w-37">
-                <li><a href="/blog" className="block px-4 py-2 hover:bg-cyan-500">Blog</a></li>
-                <li><a href="/certifications" className="block px-4 py-2 hover:bg-cyan-500">Certifications</a></li>
-                <li><a href="/services" className="block px-4 py-2 hover:bg-cyan-500">Services</a></li>
+              <span className="block py-2 px-3 hover:text-green-300 cursor-pointer">More ▼</span>
+              <ul className="absolute hidden group-hover:block bg-gray-700 text-white left-0 top-full shadow-lg w-37">
+                <li><a href="/blog" className="block px-4 py-2 hover:bg-green-400">Blog</a></li>
+                <li><a href="/certifications" className="block px-4 py-2 hover:bg-green-400">Certifications</a></li>
+                <li><a href="/services" className="block px-4 py-2 hover:bg-green-400">Services</a></li>
               </ul>
+            </li>
+
+            {/* Botão de mudança de tema (Light/Dark Mode) */}
+            <li>
+              <button
+                onClick={() => setDarkMode(!darkMode)}
+                className="flex items-center gap-2 px-3 py-3 hover:text-green-300"
+              >
+                {darkMode ? <Sun size={20} /> : <Moon size={20} />}
+              </button>
             </li>
 
             {/* Language Switcher */}
             <li className="relative group">
-              <button className="flex items-center gap-2 px-3 py-2 hover:text-cyan-300 cursor-pointer">
+              <button className="flex items-center gap-2 px-3 py-3 hover:text-green-300 cursor-pointer">
                 <Globe size={20} />
-                {language}
               </button>
-              <ul className="absolute hidden group-hover:block bg-gray-700 text-white left-0 top-full rounded-lg shadow-lg w-20">
+              <ul className="absolute hidden group-hover:block bg-gray-700 left-0 top-full shadow-lg w-15">
                 <li>
-                  <button
-                    onClick={() => setLanguage("EN")}
-                    className="block px-4 py-2 hover:bg-cyan-500 w-full text-left"
-                  >
-                    EN
-                  </button>
+                  <button className="block px-4 py-2 hover:bg-gray-600 w-full text-left"><US title="United States" className="w-7" /></button>
                 </li>
                 <li>
-                  <button
-                    onClick={() => setLanguage("PT")}
-                    className="block px-4 py-2 hover:bg-cyan-500 w-full text-left"
-                  >
-                    PT
-                  </button>
+                  <button className="block px-4 py-2 hover:bg-gray-600 w-full text-left"><MZ title="Mozambique" className="w-7" /></button>
                 </li>
               </ul>
             </li>
@@ -71,7 +86,7 @@ export default function Services() {
           </ul>
         </div>
       </div>
-    </nav>
+  </nav>
 
 
         <section className="h-screen bg-gray-900 text-white">
@@ -79,9 +94,9 @@ export default function Services() {
                 <div className="mx-auto max-w-3xl text-center">
                 <section className="min-h-screen bg-gray-900 text-white py-20">
       <div className="max-w-screen-xl mx-auto px-6">
-        <h2 className="text-cyan-500 text-4xl font-extrabold sm:text-4xl text-center mb-8">
-          Services
-        </h2>
+        <h1 className="bg-gradient-to-r from-green-400 to-purple-200 bg-clip-text text-3xl font-extrabold text-transparent sm:text-4xl mb-6">
+        Services
+      </h1>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 text-center">
           <div className="flex flex-col items-center p-6 border border-gray-700 rounded-lg transition-transform hover:scale-105">
@@ -158,7 +173,7 @@ export default function Services() {
           />
 
           <button
-            className="absolute end-1 top-1/2 -translate-y-1/2 rounded-full bg-cyan-500 px-5 py-3 text-sm font-medium text-white transition hover:bg-blue-400"
+            className="absolute end-1 top-1/2 -translate-y-1/2 rounded-full bg-green-500 px-5 py-3 text-sm font-medium text-white transition hover:bg-green-400"
           >
             Subscribe
           </button>
@@ -282,7 +297,7 @@ export default function Services() {
       </div>
     </div>
 
-    <div className="mt-16 border-t border-gray-100 pt-8">
+    <div className="mt-16 border-t border-green-300 pt-8">
       <p className="text-center text-xs/relaxed text-gray-500">
         © Company 2025. All rights reserved.
         <br />
