@@ -114,11 +114,11 @@ export default function Blog() {
 
     <section className="min-h-screen bg-gray-900 text-white py-20">
       <div className="max-w-screen-xl mx-auto px-6 sm:px-8 lg:px-12">
-      <h1 className="bg-gradient-to-r from-green-800 to-purple-200 bg-clip-text text-4xl font-extrabold text-transparent sm:text-4xl text-center">
+      <h1 className="bg-gradient-to-r from-green-500 to-purple-200 bg-clip-text text-2xl font-extrabold text-transparent sm:text-4xl text-center mb-17">
         Choose a language to learn
-        <span className="sm:block sm:text-2xl mb-3">
+        <span className="sm:block  sm:text-2xl mb-3">
           <h1 className="sm:inline text-green-400">NodeJS | </h1>
-          <h1 className="sm:inline text-yellow-300">Python | </h1>
+          <h1 className="sm:inline text-yellow-200">Python | </h1>
           <h1 className="sm:inline text-blue-300">MySQL</h1>
         </span>
       </h1>
@@ -131,7 +131,7 @@ export default function Blog() {
               <p className="text-gray-400 mt-2 text-sm text-center">{post.description}</p>
               <a 
                 href={post.link} 
-                className="mt-4 inline-flex items-center text-cyan-300 hover:text-cyan-500"
+                className="mt-4 inline-flex items-center text-green-300 hover:text-green-400"
               >
                 Read more <FaExternalLinkAlt className="ml-2" />
               </a>

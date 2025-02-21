@@ -32,7 +32,7 @@ export default function Home() {
 
     return (
     <>
-  <nav className="bg-gray-800 dark:bg-gray-900 dark:border-gray-700">
+  <nav className="bg-gray-800 dark:bg-gray-900">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <a href="#" className="flex items-center space-x-3">
           <h1 className="text-green-300 font-extrabold sm:text-4xl">Baptista</h1>
@@ -49,7 +49,7 @@ export default function Home() {
         {/* Menu de navegação */}
         <div className={`${isOpen ? "block" : "hidden"} w-full md:flex md:w-auto`}>
           <ul className="flex flex-col md:flex-row md:space-x-8 font-medium p-4 md:p-0 mt-4 md:mt-0 border border-gray-100 rounded-lg bg-gray-800 md:border-0 text-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
-            <li><a href="/" className="block py-2 px-3 text-green-300">Home</a></li>
+            <li><a href="/" className="block py-2 px-3 text-green-300" aria-current="false">Home</a></li>
             <li><a href="/about" className="block py-2 px-3 hover:text-green-300">About</a></li>
             <li><a href="/skills" className="block py-2 px-3 hover:text-green-300">Skills</a></li>
             <li><a href="/contact" className="block py-2 px-3 hover:text-green-300">Contact</a></li>
@@ -94,8 +94,7 @@ export default function Home() {
       </div>
   </nav>
 
-
-  <section className="h-screen bg-gray-900 text-white flex items-center">
+  <section className="h-full bg-gray-900 text-white flex items-center">
   <div className="max-w-screen-xl mx-auto px-4 flex flex-col lg:flex-row items-center">
     {/* Left Column */}
     <div className="lg:w-1/2 text-center lg:text-left">
@@ -116,7 +115,7 @@ export default function Home() {
         📩 Get in touch for collaborations or projects.
       </p>
 
-      <div className="mt-8 flex flex-wrap gap-4">
+      <div className="mt-8 flex flex-wrap gap-4 text-center-sm justify-center lg:justify-start">
         <a
           className="block rounded-sm border border-green-400 px-12 py-3 text-sm font-medium text-white hover:bg-green-400 focus:ring-3 sm:w-auto"
           href="#"
@@ -131,7 +130,7 @@ export default function Home() {
       <img 
         src="../img/baptista.webp" 
         alt="Baptista Joaquim" 
-        className="w-160 h-150 object-cover shadow-lg"
+        className="w-160 h-160 object-cover shadow-lg"
       />
     </div>
   </div>

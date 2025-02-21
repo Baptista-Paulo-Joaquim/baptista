@@ -89,10 +89,10 @@ export default function Contact() {
       </div>
     </nav>
 
-        <section className="h-screen bg-gray-900 text-white">
+        <section className="h-190 bg-gray-900 text-white">
             <div className="mx-auto max-w-screen-xl px-4 py-20 flex h-full items-center">
                 <div className="mx-auto max-w-3xl text-center">
-                    <h1 className="bg-gradient-to-r from-green-500 to-purple-100 bg-clip-text text-4xl font-bold text-transparent sm:text-4xl">
+                    <h1 className="bg-gradient-to-r from-green-400 to-purple-200 bg-clip-text text-4xl font-bold text-transparent sm:text-4xl">
                         Get in Touch
                     </h1>
                     <p className="mt-4 text-lg">
@@ -120,24 +120,24 @@ export default function Contact() {
                         <input 
                             type="text" 
                             placeholder="Your Name" 
-                            className="w-150 p-3 rounded-lg bg-gray-800 border border-gray-700 focus:ring-2 focus:ring-green-300"
+                            className="w-full p-3 rounded-lg bg-gray-800 border border-gray-700 focus:ring-2 focus:ring-green-300"
                             required 
                         />
                         <input 
                             type="email" 
                             placeholder="Your Email" 
-                            className="w-150 p-3 rounded-lg bg-gray-800 border border-gray-700 focus:ring-2 focus:ring-green-300"
+                            className="w-full p-3 rounded-lg bg-gray-800 border border-gray-700 focus:ring-2 focus:ring-green-300"
                             required 
                         />
                         <textarea 
                             placeholder="Your Message" 
                             rows={4} 
-                            className="w-150 p-3 rounded-lg bg-gray-800 border border-gray-700 focus:ring-2 focus:ring-green-300"
+                            className="w-full p-3 rounded-lg bg-gray-800 border border-gray-700 focus:ring-2 focus:ring-green-300"
                             required
                         ></textarea>
                         <button 
                             type="submit" 
-                            className="w-150 p-3 bg-green-500 text-white font-semibold rounded-lg hover:bg-green-600 transition duration-300">
+                            className="w-full p-3 bg-green-500 text-white font-semibold rounded-lg hover:bg-green-600 transition duration-300">
                             Send Message
                         </button>
                     </form>

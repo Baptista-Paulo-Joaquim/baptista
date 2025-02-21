@@ -89,7 +89,7 @@ export default function Home() {
     </nav>
 
 
-    <section className="h-screen bg-gray-900 text-white">
+    <section className="h-220 bg-gray-900 text-white">
             <div className="mx-auto max-w-screen-xl px-4 py-30 flex h-full items-center">
                 <div className="mx-auto max-w-3xl text-center">
                     <h1 className="bg-gradient-to-r from-green-400 to-purple-200 bg-clip-text text-4xl font-bold text-transparent sm:text-5xl">
