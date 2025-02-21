@@ -89,7 +89,7 @@ export default function Certifications() {
   </nav>
 
 
-        <section className="bg-gray-900 text-white py-20">
+        <section className="bg-gray-900 text-white py-13">
             <div className="max-w-screen-xl mx-auto px-6">
             <h2 className="bg-gradient-to-r from-green-400 to-purple-200 bg-clip-text text-4xl font-extrabold text-transparent sm:text-4xl text-center mb-8">Certifications</h2>
 

@@ -88,7 +88,7 @@ export default function Skills() {
     </nav>
     
         
-        <section className="min-h-screen bg-gray-900 text-white py-20">
+        <section className="h-150 bg-gray-900 text-white py-20">
             <div className="max-w-screen-xl mx-auto px-6">
             <h1 className="bg-gradient-to-r from-green-400 to-purple-200 bg-clip-text text-4xl font-bold text-transparent sm:text-4xl text-center m-4">
                         Skills

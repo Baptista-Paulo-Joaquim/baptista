@@ -112,7 +112,7 @@ export default function Blog() {
   </nav>
 
 
-    <section className="min-h-screen bg-gray-900 text-white py-20">
+    <section className="h-150 bg-gray-900 text-white py-20">
       <div className="max-w-screen-xl mx-auto px-6 sm:px-8 lg:px-12">
       <h1 className="bg-gradient-to-r from-green-500 to-purple-200 bg-clip-text text-2xl font-extrabold text-transparent sm:text-4xl text-center mb-17">
         Choose a language to learn
