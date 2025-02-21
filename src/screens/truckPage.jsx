@@ -101,7 +101,7 @@ export default function Truck() {
         </span>
       </h1>
 
-      <p className="mt-4 max-w-xl sm:text-xl/relaxed">
+      <p className="mt-4 max-w-xl sm:text-xl/relaxed text-justify">
       About Nsualulu Investimentos
 
     Nsualulu Investimentos is a Mozambican company specializing in cargo transportation within the country. With a modern fleet and a highly qualified team, we ensure efficient, safe, and timely logistics solutions to meet our clients' needs.

@@ -30,9 +30,9 @@ export default function Skills() {
         <>
          <nav className="bg-gray-800 border-gray-200 dark:bg-gray-900 dark:border-gray-700">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-      <a href="#" className="flex items-center space-x-3">
-          <h1 className="text-green-300 font-extrabold sm:text-4xl">Baptista</h1>
-        </a>
+      <a href="/" className="flex items-center space-x-3">
+          <h1 className="text-green-300 text-2xl font-extrabold sm:text-4xl ">Baptista</h1>
+      </a>
 
         <button
           onClick={() => setIsOpen(!isOpen)}
@@ -88,13 +88,15 @@ export default function Skills() {
     </nav>
     
         
-        <section className="h-150 bg-gray-900 text-white py-20">
+        <section className="h-full bg-gray-900 text-white py-10">
+
+        {/* grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5 py-2 */}
             <div className="max-w-screen-xl mx-auto px-6">
             <h1 className="bg-gradient-to-r from-green-400 to-purple-200 bg-clip-text text-4xl font-bold text-transparent sm:text-4xl text-center m-4">
                         Skills
                     </h1>
 
-                <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 text-center">
+                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 text-center">
                 <div className="flex flex-col items-center p-4 border border-gray-700 rounded-lg transition-transform hover:scale-108">
                         <FaHtml5 className="text-orange-500 text-5xl" />
                         <span className="mt-2">HTML5</span>

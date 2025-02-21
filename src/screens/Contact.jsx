@@ -27,7 +27,7 @@ export default function Contact() {
     return (
         <>
 
-<nav className="bg-gray-800 border-gray-200 dark:bg-gray-900 dark:border-gray-700">
+<nav className="bg-gray-800 dark:bg-gray-900 dark:border-gray-700">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <a href="#" className="flex items-center space-x-3">
           <h1 className="text-green-300 font-extrabold sm:text-4xl">Baptista</h1>
@@ -100,7 +100,7 @@ export default function Contact() {
                     </p>
 
                     {/* Contact Information */}
-                    <div className="mt-6 space-y-4">
+                    <div className="mt-6 space-y-4 text-start">
                         <p className="text-lg">
                             📧 <span className="font-semibold">Email : </span> 
                             <a href="mailto:baptista@example.com" className="text-green-300 hover:underline">

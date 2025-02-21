@@ -95,9 +95,9 @@ export default function Home() {
   </nav>
 
   <section className="h-full bg-gray-900 text-white flex items-center">
-  <div className="max-w-screen-xl mx-auto px-4 flex flex-col lg:flex-row items-center">
+  <div className="max-w-screen-xl mx-auto px-4 flex flex-col lg:flex-row items-center m-5">
     {/* Left Column */}
-    <div className="lg:w-1/2 text-center lg:text-left">
+    <div className="lg:w-1/2 text-center lg:text-left mt-10">
       <h1 className="bg-gradient-to-r from-green-400 to-purple-200 bg-clip-text text-4xl font-extrabold text-transparent sm:text-4xl">
         Baptista Joaquim
         <span className="sm:block sm:text-2xl">
@@ -105,7 +105,7 @@ export default function Home() {
         </span>
       </h1>
 
-      <p className="mt-4 max-w-xl sm:text-xl/relaxed">
+      <p className="mt-4 max-w-xl sm:text-xl/relaxed text-justify">
         I am a software engineer passionate about technology, web development, and cybersecurity. I have experience in JavaScript, TypeScript, React.js, Node.js, Docker, PostgreSQL, and digital security, creating efficient and scalable solutions.
         <br /><br />
         Currently, I also work in the field of systems development, applying technology to optimize processes and improve operational efficiency.
@@ -130,7 +130,7 @@ export default function Home() {
       <img 
         src="../img/baptista.webp" 
         alt="Baptista Joaquim" 
-        className="w-160 h-160 object-cover shadow-lg"
+        className="w-130 h-130 object-cover shadow-lg"
       />
     </div>
   </div>

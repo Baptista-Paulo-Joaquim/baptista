@@ -94,23 +94,23 @@ export default function Certifications() {
             <h2 className="bg-gradient-to-r from-green-400 to-purple-200 bg-clip-text text-4xl font-extrabold text-transparent sm:text-4xl text-center mb-8">Certifications</h2>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 text-center">
-                    <div className="p-4 border border-gray-700 rounded-lg hover:cursor-pointer hover:bg-cyan-900">
+                    <div className="p-4 border border-gray-700 rounded-lg hover:cursor-pointer hover:bg-gray-700">
                         <h3 className="text-xl text-green-50 font-semibold">Certified Software Engineer</h3>
                         <p className="text-gray-400 text-sm">By UNIPIAGET | 2024</p>
                     </div>
-                    <div className="p-4 border border-gray-700 rounded-lg hover:cursor-pointer hover:bg-cyan-900">
+                    <div className="p-4 border border-gray-700 rounded-lg hover:cursor-pointer hover:bg-gray-700">
                         <h3 className="text-xl text-green-50 font-semibold">Inglish 1 Course</h3>
                         <p className="text-gray-400 text-sm">Issued by Instituto Federal de Educação, Ciência e Tecnologia do Rio Grande do Sul | 2023</p>
                     </div>
-                    <div className="p-4 border border-gray-700 rounded-lg hover:cursor-pointer hover:bg-cyan-900">
+                    <div className="p-4 border border-gray-700 rounded-lg hover:cursor-pointer hover:bg-gray-700">
                         <h3 className="text-xl text-green-50 font-semibold">HTML Course</h3>
                         <p className="text-gray-400 text-sm">Issued by Sololearn | 2020</p>
                     </div>
-                    <div className="p-4 border border-gray-700 rounded-lg hover:cursor-pointer hover:bg-cyan-900">
+                    <div className="p-4 border border-gray-700 rounded-lg hover:cursor-pointer hover:bg-gray-700">
                         <h3 className="text-xl text-green-50 font-semibold">Javascript Course</h3>
                         <p className="text-gray-400 text-sm">Issued by Sololearn | 2023</p>
                     </div>
-                    <div className="p-4 border border-gray-700 rounded-lg hover:cursor-pointer hover:bg-cyan-900">
+                    <div className="p-4 border border-gray-700 rounded-lg hover:cursor-pointer hover:bg-gray-700">
                         <h3 className="text-xl text-green-50 font-semibold">Python Course</h3>
                         <p className="text-gray-400 text-sm">Issued by Sololearn | 2023</p>
                     </div>
